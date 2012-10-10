@@ -3,7 +3,7 @@ package trevorah.graphical;
 import trevorah.graphical.boardPanels.HexGroupPanel;
 import trevorah.graphical.boardPanels.HexPanel;
 import trevorah.gameMechanics.Runner;
-import trevorah.gameMechanics.Game;
+import trevorah.gameMechanics.GameRunner;
 import java.awt.BorderLayout;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
@@ -71,7 +71,7 @@ class GUI extends JFrame implements ActionListener {
     int gameType = boardSettings.getGameType();
     int boardSize = boardSettings.getBoardSize();
     int numberOfSeasons = boardSettings.getSeasonSize();
-    game = new Game(boardSize, gameType, numberOfSeasons, red, redArgs, blue, blueArgs);
+    game = new GameRunner(boardSize, gameType, numberOfSeasons, red, redArgs, blue, blueArgs);
     gameThread = (Thread) game;
   }
 

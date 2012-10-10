@@ -12,7 +12,7 @@ import trevorah.hexBoards.GameBoard;
 import trevorah.hexBoards.Board;
 import trevorah.players.AdjSeasonPlayer;
 
-public class Game extends Thread implements Runner {
+public class GameRunner extends Thread implements Runner {
 
   private GameBoard board;
   private Player red;
@@ -24,7 +24,7 @@ public class Game extends Thread implements Runner {
   private int gameType;
   private String commentary = "";
 
-  public Game(int size, int type, int seasoncount, int redPlayer, String[] redArgs, int bluePlayer, String[] blueArgs) {
+  public GameRunner(int size, int type, int seasoncount, int redPlayer, String[] redArgs, int bluePlayer, String[] blueArgs) {
     this.seasonPicker = new SeasonMechanics(seasoncount);
     this.board = new GameBoard(size, seasonPicker);
     this.gameType = type;
@@ -72,7 +72,7 @@ public class Game extends Thread implements Runner {
       try {
         moveAccepted = board.makeMove(move);
       } catch (InvalidMoveException ex) {
-        Logger.getLogger(Game.class.getName()).log(Level.SEVERE, null, ex);
+        Logger.getLogger(GameRunner.class.getName()).log(Level.SEVERE, null, ex);
       }
       if (!moveAccepted)
         System.out.println("Move was not accepted, passing on...");
