@@ -1,16 +1,16 @@
-package gameMechanics;
+package trevorah.gameMechanics;
 
 import java.util.Random;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import players.Player;
-import players.PointAndClickPlayer;
-import players.AdjPlayer;
-import players.randomTurn.R_Path;
-import players.randomTurn.R_Single;
-import hexBoards.GameBoard;
-import hexBoards.Board;
-import players.AdjSeasonPlayer;
+import trevorah.players.Player;
+import trevorah.players.PointAndClickPlayer;
+import trevorah.players.AdjPlayer;
+import trevorah.players.randomTurn.R_Path;
+import trevorah.players.randomTurn.R_Single;
+import trevorah.hexBoards.GameBoard;
+import trevorah.hexBoards.Board;
+import trevorah.players.AdjSeasonPlayer;
 
 public class Game extends Thread implements Runner {
 
@@ -33,7 +33,6 @@ public class Game extends Thread implements Runner {
     this.blue = createPlayer(bluePlayer, Board.BLUE, blueArgs);
   }
 
-  @Override
   public GameBoard getBoard() {
     return board;
   }
@@ -121,13 +120,11 @@ public class Game extends Thread implements Runner {
     }
   }
 
-  @Override
   public void stopGame() {
     stop = true;
     System.out.println("Stopped!");
   }
 
-  @Override
   public void pauseSwitch() {
     if (pause)
       pause = false;
@@ -138,7 +135,6 @@ public class Game extends Thread implements Runner {
     blue.setPause(pause);
   }
 
-  @Override
   public SeasonMechanics getSeasonPicker() {
     return seasonPicker;
   }
@@ -168,12 +164,10 @@ public class Game extends Thread implements Runner {
     return player;
   }
 
-  @Override
   public Player getPlayerBlue() {
     return blue;
   }
 
-  @Override
   public Player getPlayerRed() {
     return red;
   }
@@ -182,7 +176,6 @@ public class Game extends Thread implements Runner {
     this.commentary = announcement;
   }
 
-  @Override
   public String getCommentary() {
     return commentary;
   }

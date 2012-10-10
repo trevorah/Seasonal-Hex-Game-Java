@@ -1,6 +1,6 @@
-package graphical.boardPanels;
+package trevorah.graphical.boardPanels;
 
-import hexBoards.Board;
+import trevorah.hexBoards.Board;
 
 @SuppressWarnings("serial")
 public class HexDisplayOnlyPanel extends HexPanel{

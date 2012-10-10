@@ -1,7 +1,7 @@
-package players;
+package trevorah.players;
 
-import gameMechanics.Runner;
-import hexBoards.Board;
+import trevorah.gameMechanics.Runner;
+import trevorah.hexBoards.Board;
 import java.util.ArrayList;
 
 public abstract class AbstractPlayer implements Player {
@@ -23,12 +23,10 @@ public abstract class AbstractPlayer implements Player {
     this.size = game.getBoard().getSize();
   }
 
-  @Override
   public ArrayList<Board> getAuxBoards() {
     return auxBoards;
   }
 
-  @Override
   public void setPause(boolean pause) {
     throw new UnsupportedOperationException("Not supported yet.");
   }

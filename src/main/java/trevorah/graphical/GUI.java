@@ -1,9 +1,9 @@
-package graphical;
+package trevorah.graphical;
 
-import graphical.boardPanels.HexGroupPanel;
-import graphical.boardPanels.HexPanel;
-import gameMechanics.Runner;
-import gameMechanics.Game;
+import trevorah.graphical.boardPanels.HexGroupPanel;
+import trevorah.graphical.boardPanels.HexPanel;
+import trevorah.gameMechanics.Runner;
+import trevorah.gameMechanics.Game;
 import java.awt.BorderLayout;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
@@ -15,8 +15,8 @@ import java.awt.event.WindowListener;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
-import hexBoards.Board;
-import graphical.boardPanels.HexGamePanel;
+import trevorah.hexBoards.Board;
+import trevorah.graphical.boardPanels.HexGamePanel;
 import javax.swing.JLabel;
 
 @SuppressWarnings("serial")
@@ -133,7 +133,6 @@ class GUI extends JFrame implements ActionListener {
     frame.pack();
   }
 
-  @Override
   public void actionPerformed(ActionEvent e) {
     if ("start".equals(e.getActionCommand())) {
 

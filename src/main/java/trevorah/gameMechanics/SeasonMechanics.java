@@ -1,6 +1,6 @@
-package gameMechanics;
+package trevorah.gameMechanics;
 
-import hexBoards.Board;
+import trevorah.hexBoards.Board;
 import java.awt.Color;
 
 public class SeasonMechanics {

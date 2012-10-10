@@ -1,9 +1,9 @@
-package players;
+package trevorah.players;
 
 import java.util.ArrayList;
 
-import hexBoards.Board;
-import gameMechanics.Move;
+import trevorah.hexBoards.Board;
+import trevorah.gameMechanics.Move;
 
 public interface Player {
 

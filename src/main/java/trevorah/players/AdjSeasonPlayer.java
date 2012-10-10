@@ -1,9 +1,9 @@
-package players;
+package trevorah.players;
 
-import gameMechanics.Move;
-import gameMechanics.Runner;
-import hexBoards.AdjMatrix;
-import hexBoards.Board;
+import trevorah.gameMechanics.Move;
+import trevorah.gameMechanics.Runner;
+import trevorah.hexBoards.AdjMatrix;
+import trevorah.hexBoards.Board;
 import java.awt.Point;
 
 public class AdjSeasonPlayer extends AdjPlayer {

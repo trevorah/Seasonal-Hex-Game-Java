@@ -1,4 +1,4 @@
-package graphical;
+package trevorah.graphical;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -6,7 +6,7 @@ import javax.swing.JComboBox;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
-import players.Player;
+import trevorah.players.Player;
 
 public class PlayerChoicePanel extends JPanel implements ActionListener{
 
@@ -42,7 +42,6 @@ public class PlayerChoicePanel extends JPanel implements ActionListener{
     return Player.playerIndex[playerTypeList.getSelectedIndex()];
   }
 
-  @Override
   public void actionPerformed(ActionEvent e) {
     if ("player_type".equals(e.getActionCommand())) {
       argsTextField.setText(Player.argsList[playerTypeList.getSelectedIndex()]);

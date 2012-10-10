@@ -1,12 +1,12 @@
-package players;
+package trevorah.players;
 
-import gameMechanics.Runner;
+import trevorah.gameMechanics.Runner;
 
 import java.awt.Point;
 import java.util.ArrayList;
 
-import hexBoards.Board;
-import gameMechanics.Move;
+import trevorah.hexBoards.Board;
+import trevorah.gameMechanics.Move;
 
 public class PointAndClickPlayer implements Player {
 	private Runner game = null;
@@ -17,8 +17,7 @@ public class PointAndClickPlayer implements Player {
 		this.colour = colour;
 	}
 
-  @Override
-	public Move getMove() {
+  public Move getMove() {
 		switch (colour) {
 		case Board.RED:
 			System.out.print("Red move: ");
@@ -43,12 +42,10 @@ public class PointAndClickPlayer implements Player {
 		return move;
 	}
 
-	@Override
 	public ArrayList<Board> getAuxBoards() {
 		return new ArrayList<Board>();
 	}
 
-	@Override
 	public void setPause(boolean pause) {
 	}
 

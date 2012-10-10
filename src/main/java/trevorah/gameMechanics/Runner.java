@@ -1,7 +1,7 @@
-package gameMechanics;
+package trevorah.gameMechanics;
 
-import players.Player;
-import hexBoards.GameBoard;
+import trevorah.players.Player;
+import trevorah.hexBoards.GameBoard;
 
 public interface Runner {
 	public static final int FAIR_TURN = 0;

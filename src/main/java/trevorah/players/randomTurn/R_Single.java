@@ -1,15 +1,15 @@
-package players.randomTurn;
+package trevorah.players.randomTurn;
 
-import gameMechanics.Runner;
-import hexBoards.GameBoard;
-import hexBoards.OpenBoard;
+import trevorah.gameMechanics.Runner;
+import trevorah.hexBoards.GameBoard;
+import trevorah.hexBoards.OpenBoard;
 import java.awt.Point;
-import hexBoards.Board;
-import gameMechanics.Move;
-import hexBoards.ScoreBoard;
+import trevorah.hexBoards.Board;
+import trevorah.gameMechanics.Move;
+import trevorah.hexBoards.ScoreBoard;
 import java.util.Random;
-import players.AbstractPlayer;
-import players.Player;
+import trevorah.players.AbstractPlayer;
+import trevorah.players.Player;
 
 public class R_Single extends AbstractPlayer {
 
@@ -40,7 +40,6 @@ public class R_Single extends AbstractPlayer {
     auxBoards.add(randomFillBoard);
   }
 
-  @Override
   public Move getMove() {
 
     this.scoreBoard.wipeAll();

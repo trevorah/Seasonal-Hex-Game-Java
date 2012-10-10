@@ -1,4 +1,4 @@
-package hexBoards;
+package trevorah.hexBoards;
 
 public interface Board {
 

@@ -1,4 +1,4 @@
-package hexBoards;
+package trevorah.hexBoards;
 
 import java.util.ArrayList;
 import no.uib.cipr.matrix.Matrix;

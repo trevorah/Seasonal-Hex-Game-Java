@@ -1,7 +1,7 @@
-package graphical.boardPanels;
+package trevorah.graphical.boardPanels;
 
-import hexBoards.Board;
-import hexBoards.GameBoard;
+import trevorah.hexBoards.Board;
+import trevorah.hexBoards.GameBoard;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Point;

@@ -1,4 +1,4 @@
-package gameMechanics;
+package trevorah.gameMechanics;
 
 public class Move {
 	private int colour, x, y;

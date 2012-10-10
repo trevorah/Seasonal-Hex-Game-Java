@@ -1,8 +1,8 @@
-package graphical;
+package trevorah.graphical;
 
-import gameMechanics.Runner;
-import gameMechanics.SeasonMechanics;
-import hexBoards.Board;
+import trevorah.gameMechanics.Runner;
+import trevorah.gameMechanics.SeasonMechanics;
+import trevorah.hexBoards.Board;
 import javax.swing.JComboBox;
 import javax.swing.JLabel;
 import javax.swing.JPanel;

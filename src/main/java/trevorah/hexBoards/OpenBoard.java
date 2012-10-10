@@ -1,6 +1,6 @@
-package hexBoards;
+package trevorah.hexBoards;
 
-import gameMechanics.SeasonMechanics;
+import trevorah.gameMechanics.SeasonMechanics;
 import java.util.Random;
 
 public class OpenBoard extends GameBoard {

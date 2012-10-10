@@ -1,8 +1,8 @@
-package hexBoards;
+package trevorah.hexBoards;
 
-import gameMechanics.Move;
-import gameMechanics.InvalidMoveException;
-import gameMechanics.SeasonMechanics;
+import trevorah.gameMechanics.Move;
+import trevorah.gameMechanics.InvalidMoveException;
+import trevorah.gameMechanics.SeasonMechanics;
 import java.awt.Color;
 import java.awt.Point;
 import java.awt.Toolkit;

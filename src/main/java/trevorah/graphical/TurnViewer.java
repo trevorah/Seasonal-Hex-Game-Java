@@ -1,6 +1,6 @@
-package graphical;
+package trevorah.graphical;
 
-import gameMechanics.SeasonMechanics;
+import trevorah.gameMechanics.SeasonMechanics;
 
 import java.awt.Color;
 import java.awt.Dimension;
@@ -93,7 +93,6 @@ public class TurnViewer extends JPanel implements Runnable {
 
   }
 
-  @Override
   public void run() {
     // Just to be nice, lower this thread's priority
     // so it can't interfere with other processing going on.

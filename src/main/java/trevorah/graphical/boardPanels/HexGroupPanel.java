@@ -1,7 +1,7 @@
-package graphical.boardPanels;
+package trevorah.graphical.boardPanels;
 
-import players.Player;
-import hexBoards.ScoreBoard;
+import trevorah.players.Player;
+import trevorah.hexBoards.ScoreBoard;
 import javax.swing.JTabbedPane;
 
 @SuppressWarnings("serial")

@@ -1,15 +1,15 @@
-package players;
+package trevorah.players;
 
-import gameMechanics.Runner;
+import trevorah.gameMechanics.Runner;
 import java.awt.Point;
 import java.util.Random;
-import hexBoards.AdjMatrix;
-import hexBoards.Board;
-import hexBoards.BoardData;
-import hexBoards.GameBoard;
-import gameMechanics.Move;
-import hexBoards.OpenBoard;
-import hexBoards.ScoreBoard;
+import trevorah.hexBoards.AdjMatrix;
+import trevorah.hexBoards.Board;
+import trevorah.hexBoards.BoardData;
+import trevorah.hexBoards.GameBoard;
+import trevorah.gameMechanics.Move;
+import trevorah.hexBoards.OpenBoard;
+import trevorah.hexBoards.ScoreBoard;
 
 public class AdjPlayer extends AbstractPlayer {
 
@@ -73,7 +73,6 @@ public class AdjPlayer extends AbstractPlayer {
     }
   }
 
-  @Override
   public Move getMove() {
     /*
      * wipe all scoreboards

@@ -1,8 +1,8 @@
-package graphical.boardPanels;
+package trevorah.graphical.boardPanels;
 
 import java.awt.Color;
-import hexBoards.Board;
-import hexBoards.ScoreBoard;
+import trevorah.hexBoards.Board;
+import trevorah.hexBoards.ScoreBoard;
 
 @SuppressWarnings("serial")
 public class HeatMap extends HexPanel {

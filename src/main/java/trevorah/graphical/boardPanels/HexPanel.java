@@ -1,11 +1,11 @@
-package graphical.boardPanels;
+package trevorah.graphical.boardPanels;
 
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import javax.swing.JPanel;
-import hexBoards.Board;
+import trevorah.hexBoards.Board;
 import java.awt.Point;
 import java.awt.Polygon;
 import java.awt.RenderingHints;
@@ -169,7 +169,6 @@ public abstract class HexPanel extends JPanel implements Runnable {
     return returnColour;
   }
 
-  @Override
   public void run() {
     // Just to be nice, lower this thread's priority
     // so it can't interfere with other processing going on.
