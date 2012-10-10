@@ -27,7 +27,6 @@ class GUI extends JFrame implements ActionListener {
   private JPanel activeBoardsPanel = null;
   private JPanel buttonPanel = null;
   private JButton startButton = new JButton("Start");
-//  private JButton pauseButton = new JButton("Pause");
   private Runner game;
   private JPanel auxBoardsPanel;
   private JPanel playBoardPanel;
@@ -54,13 +53,7 @@ class GUI extends JFrame implements ActionListener {
     startButton.setEnabled(true);
     startButton.addActionListener(this);
 
-//    pauseButton.setMnemonic(KeyEvent.VK_P);
-//    pauseButton.setActionCommand("pause");
-//    pauseButton.setEnabled(true);
-//    pauseButton.addActionListener(this);
-
     buttonPanel.add(startButton);
-//    buttonPanel.add(pauseButton);
 
     settingsPanel = new JPanel(new BorderLayout());
     settingsPanel.add(gameSettings, BorderLayout.CENTER);
@@ -144,8 +137,6 @@ class GUI extends JFrame implements ActionListener {
       gameThread.start();
 
     }
-    if ("pause".equals(e.getActionCommand()))
-      game.pauseSwitch();
   }
 
   public static void main(String[] args) {

@@ -45,8 +45,4 @@ public class PointAndClickPlayer implements Player {
 	public ArrayList<Board> getAuxBoards() {
 		return new ArrayList<Board>();
 	}
-
-	public void setPause(boolean pause) {
-	}
-
 }

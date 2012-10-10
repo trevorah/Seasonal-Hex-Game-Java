@@ -16,8 +16,6 @@ public interface Runner {
 
 	public Player getPlayerBlue();
 	
-	public void pauseSwitch();
-	
 	public void stopGame();
 	
 	public SeasonMechanics getSeasonPicker();

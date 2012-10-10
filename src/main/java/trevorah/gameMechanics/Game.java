@@ -19,7 +19,6 @@ public class Game extends Thread implements Runner {
   private Player blue;
   private int currentPlayer = Board.RED;
   private boolean finished = false;
-  private boolean pause = false;
   private volatile boolean stop = false;
   private SeasonMechanics seasonPicker;
   private int gameType;
@@ -123,16 +122,6 @@ public class Game extends Thread implements Runner {
   public void stopGame() {
     stop = true;
     System.out.println("Stopped!");
-  }
-
-  public void pauseSwitch() {
-    if (pause)
-      pause = false;
-    else
-      pause = true;
-    System.out.println("pause = " + pause);
-    red.setPause(pause);
-    blue.setPause(pause);
   }
 
   public SeasonMechanics getSeasonPicker() {

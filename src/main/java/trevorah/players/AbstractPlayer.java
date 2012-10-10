@@ -10,7 +10,6 @@ public abstract class AbstractPlayer implements Player {
   protected Runner game;
   protected int player;
   protected int opponent;
-  protected boolean pause;
   protected int size;
 
   public AbstractPlayer(Runner game, int colour, String[] args) {
@@ -25,9 +24,5 @@ public abstract class AbstractPlayer implements Player {
 
   public ArrayList<Board> getAuxBoards() {
     return auxBoards;
-  }
-
-  public void setPause(boolean pause) {
-    throw new UnsupportedOperationException("Not supported yet.");
   }
 }

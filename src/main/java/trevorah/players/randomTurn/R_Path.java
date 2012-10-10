@@ -51,13 +51,6 @@ public class R_Path extends AbstractPlayer {
 
 
     for (int sampleCount = 0; sampleCount < sampleLimit; sampleCount++) {
-      while (pause)
-        try {
-          Thread.sleep(50);
-        } catch (InterruptedException e) {
-
-          e.printStackTrace();
-        }
       randomFillBoard.setBoard(mainBoard.openClone());
       paths.setBoard(mainBoard.openClone());
 

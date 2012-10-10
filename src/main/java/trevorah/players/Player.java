@@ -27,17 +27,5 @@ public interface Player {
   public static final String[] argsList = { R_DEFAULT_ARGS, R_DEFAULT_ARGS, ADJ_DEFAULT_ARGS, CLICK_DEFAULT_ARGS, ADJ_DEFAULT_ARGS};
 	public Move getMove();
 
-	//public void opponentMove(Move move);
-
-	//public void notifyWin();
-
-	//public void notifyLoss();
-
 	public ArrayList<Board> getAuxBoards();
-	
-	public void setPause(boolean pause);
-	// public Board getMainBoard();
-
-  //public int getDefaultArgs();
-
 }

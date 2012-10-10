@@ -27,7 +27,4 @@ public class HexGroupPanel extends JTabbedPane {
       panel.startAnimation();
     }
   }
-
-  public void pauseAll() {
-  }
 }

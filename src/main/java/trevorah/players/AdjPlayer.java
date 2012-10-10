@@ -163,10 +163,6 @@ public class AdjPlayer extends AbstractPlayer {
     return new Point(x, y);
   }
 
-  @Override
-  public void setPause(boolean pause) {
-  }
-
   protected boolean beats(int x, int y, int winningX, int winningY) {
     int length_compettitor = comboLengths.get(x, y);
     int length_champion = comboLengths.get(winningX, winningY);
